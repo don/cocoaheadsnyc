@@ -1,0 +1,439 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		F626C8261B46121700FDFA55 /* CoreBluetooth.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F626C8251B46121700FDFA55 /* CoreBluetooth.framework */; };
+		F6A57DC81B4611A100EA8634 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F6A57DC71B4611A100EA8634 /* main.m */; };
+		F6A57DCB1B4611A100EA8634 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F6A57DCA1B4611A100EA8634 /* AppDelegate.m */; };
+		F6A57DCE1B4611A100EA8634 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F6A57DCD1B4611A100EA8634 /* ViewController.m */; };
+		F6A57DD11B4611A100EA8634 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F6A57DCF1B4611A100EA8634 /* Main.storyboard */; };
+		F6A57DD31B4611A100EA8634 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F6A57DD21B4611A100EA8634 /* Images.xcassets */; };
+		F6A57DD61B4611A100EA8634 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = F6A57DD41B4611A100EA8634 /* LaunchScreen.xib */; };
+		F6A57DE21B4611A100EA8634 /* ThermometerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = F6A57DE11B4611A100EA8634 /* ThermometerTests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		F6A57DDC1B4611A100EA8634 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F6A57DBA1B4611A100EA8634 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F6A57DC11B4611A100EA8634;
+			remoteInfo = Thermometer;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		F626C8251B46121700FDFA55 /* CoreBluetooth.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreBluetooth.framework; path = System/Library/Frameworks/CoreBluetooth.framework; sourceTree = SDKROOT; };
+		F6A57DC21B4611A100EA8634 /* Thermometer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Thermometer.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F6A57DC61B4611A100EA8634 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F6A57DC71B4611A100EA8634 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		F6A57DC91B4611A100EA8634 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		F6A57DCA1B4611A100EA8634 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		F6A57DCC1B4611A100EA8634 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		F6A57DCD1B4611A100EA8634 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		F6A57DD01B4611A100EA8634 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		F6A57DD21B4611A100EA8634 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		F6A57DD51B4611A100EA8634 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		F6A57DDB1B4611A100EA8634 /* ThermometerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ThermometerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		F6A57DE01B4611A100EA8634 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F6A57DE11B4611A100EA8634 /* ThermometerTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ThermometerTests.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F6A57DBF1B4611A100EA8634 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F626C8261B46121700FDFA55 /* CoreBluetooth.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F6A57DD81B4611A100EA8634 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		F6A57DB91B4611A100EA8634 = {
+			isa = PBXGroup;
+			children = (
+				F626C8251B46121700FDFA55 /* CoreBluetooth.framework */,
+				F6A57DC41B4611A100EA8634 /* Thermometer */,
+				F6A57DDE1B4611A100EA8634 /* ThermometerTests */,
+				F6A57DC31B4611A100EA8634 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		F6A57DC31B4611A100EA8634 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F6A57DC21B4611A100EA8634 /* Thermometer.app */,
+				F6A57DDB1B4611A100EA8634 /* ThermometerTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F6A57DC41B4611A100EA8634 /* Thermometer */ = {
+			isa = PBXGroup;
+			children = (
+				F6A57DC91B4611A100EA8634 /* AppDelegate.h */,
+				F6A57DCA1B4611A100EA8634 /* AppDelegate.m */,
+				F6A57DCC1B4611A100EA8634 /* ViewController.h */,
+				F6A57DCD1B4611A100EA8634 /* ViewController.m */,
+				F6A57DCF1B4611A100EA8634 /* Main.storyboard */,
+				F6A57DD21B4611A100EA8634 /* Images.xcassets */,
+				F6A57DD41B4611A100EA8634 /* LaunchScreen.xib */,
+				F6A57DC51B4611A100EA8634 /* Supporting Files */,
+			);
+			path = Thermometer;
+			sourceTree = "<group>";
+		};
+		F6A57DC51B4611A100EA8634 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				F6A57DC61B4611A100EA8634 /* Info.plist */,
+				F6A57DC71B4611A100EA8634 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		F6A57DDE1B4611A100EA8634 /* ThermometerTests */ = {
+			isa = PBXGroup;
+			children = (
+				F6A57DE11B4611A100EA8634 /* ThermometerTests.m */,
+				F6A57DDF1B4611A100EA8634 /* Supporting Files */,
+			);
+			path = ThermometerTests;
+			sourceTree = "<group>";
+		};
+		F6A57DDF1B4611A100EA8634 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				F6A57DE01B4611A100EA8634 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		F6A57DC11B4611A100EA8634 /* Thermometer */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F6A57DE51B4611A100EA8634 /* Build configuration list for PBXNativeTarget "Thermometer" */;
+			buildPhases = (
+				F6A57DBE1B4611A100EA8634 /* Sources */,
+				F6A57DBF1B4611A100EA8634 /* Frameworks */,
+				F6A57DC01B4611A100EA8634 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Thermometer;
+			productName = Thermometer;
+			productReference = F6A57DC21B4611A100EA8634 /* Thermometer.app */;
+			productType = "com.apple.product-type.application";
+		};
+		F6A57DDA1B4611A100EA8634 /* ThermometerTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F6A57DE81B4611A100EA8634 /* Build configuration list for PBXNativeTarget "ThermometerTests" */;
+			buildPhases = (
+				F6A57DD71B4611A100EA8634 /* Sources */,
+				F6A57DD81B4611A100EA8634 /* Frameworks */,
+				F6A57DD91B4611A100EA8634 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F6A57DDD1B4611A100EA8634 /* PBXTargetDependency */,
+			);
+			name = ThermometerTests;
+			productName = ThermometerTests;
+			productReference = F6A57DDB1B4611A100EA8634 /* ThermometerTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F6A57DBA1B4611A100EA8634 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0640;
+				ORGANIZATIONNAME = "Don Coleman";
+				TargetAttributes = {
+					F6A57DC11B4611A100EA8634 = {
+						CreatedOnToolsVersion = 6.4;
+					};
+					F6A57DDA1B4611A100EA8634 = {
+						CreatedOnToolsVersion = 6.4;
+						TestTargetID = F6A57DC11B4611A100EA8634;
+					};
+				};
+			};
+			buildConfigurationList = F6A57DBD1B4611A100EA8634 /* Build configuration list for PBXProject "Thermometer" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = F6A57DB91B4611A100EA8634;
+			productRefGroup = F6A57DC31B4611A100EA8634 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F6A57DC11B4611A100EA8634 /* Thermometer */,
+				F6A57DDA1B4611A100EA8634 /* ThermometerTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F6A57DC01B4611A100EA8634 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F6A57DD11B4611A100EA8634 /* Main.storyboard in Resources */,
+				F6A57DD61B4611A100EA8634 /* LaunchScreen.xib in Resources */,
+				F6A57DD31B4611A100EA8634 /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F6A57DD91B4611A100EA8634 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F6A57DBE1B4611A100EA8634 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F6A57DCE1B4611A100EA8634 /* ViewController.m in Sources */,
+				F6A57DCB1B4611A100EA8634 /* AppDelegate.m in Sources */,
+				F6A57DC81B4611A100EA8634 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F6A57DD71B4611A100EA8634 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F6A57DE21B4611A100EA8634 /* ThermometerTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		F6A57DDD1B4611A100EA8634 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F6A57DC11B4611A100EA8634 /* Thermometer */;
+			targetProxy = F6A57DDC1B4611A100EA8634 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		F6A57DCF1B4611A100EA8634 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F6A57DD01B4611A100EA8634 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		F6A57DD41B4611A100EA8634 /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F6A57DD51B4611A100EA8634 /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		F6A57DE31B4611A100EA8634 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		F6A57DE41B4611A100EA8634 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		F6A57DE61B4611A100EA8634 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = Thermometer/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		F6A57DE71B4611A100EA8634 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = Thermometer/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		F6A57DE91B4611A100EA8634 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = ThermometerTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Thermometer.app/Thermometer";
+			};
+			name = Debug;
+		};
+		F6A57DEA1B4611A100EA8634 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = ThermometerTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Thermometer.app/Thermometer";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F6A57DBD1B4611A100EA8634 /* Build configuration list for PBXProject "Thermometer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F6A57DE31B4611A100EA8634 /* Debug */,
+				F6A57DE41B4611A100EA8634 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F6A57DE51B4611A100EA8634 /* Build configuration list for PBXNativeTarget "Thermometer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F6A57DE61B4611A100EA8634 /* Debug */,
+				F6A57DE71B4611A100EA8634 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F6A57DE81B4611A100EA8634 /* Build configuration list for PBXNativeTarget "ThermometerTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F6A57DE91B4611A100EA8634 /* Debug */,
+				F6A57DEA1B4611A100EA8634 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = F6A57DBA1B4611A100EA8634 /* Project object */;
+}
