@@ -1,0 +1,441 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		F68D32FC1B4C09B40056B8A7 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F68D32FB1B4C09B40056B8A7 /* main.m */; };
+		F68D32FF1B4C09B40056B8A7 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F68D32FE1B4C09B40056B8A7 /* AppDelegate.m */; };
+		F68D33021B4C09B40056B8A7 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F68D33011B4C09B40056B8A7 /* ViewController.m */; };
+		F68D33051B4C09B40056B8A7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F68D33031B4C09B40056B8A7 /* Main.storyboard */; };
+		F68D33071B4C09B40056B8A7 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F68D33061B4C09B40056B8A7 /* Images.xcassets */; };
+		F68D330A1B4C09B40056B8A7 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = F68D33081B4C09B40056B8A7 /* LaunchScreen.xib */; };
+		F68D33161B4C09B40056B8A7 /* BLEFlashlightTests.m in Sources */ = {isa = PBXBuildFile; fileRef = F68D33151B4C09B40056B8A7 /* BLEFlashlightTests.m */; };
+		F68D33201B4C0A150056B8A7 /* CoreBluetooth.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F68D331F1B4C0A150056B8A7 /* CoreBluetooth.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		F68D33101B4C09B40056B8A7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F68D32EE1B4C09B40056B8A7 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F68D32F51B4C09B40056B8A7;
+			remoteInfo = BLEFlashlight;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		F68D32F61B4C09B40056B8A7 /* BLEFlashlight.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BLEFlashlight.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F68D32FA1B4C09B40056B8A7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F68D32FB1B4C09B40056B8A7 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		F68D32FD1B4C09B40056B8A7 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		F68D32FE1B4C09B40056B8A7 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		F68D33001B4C09B40056B8A7 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		F68D33011B4C09B40056B8A7 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		F68D33041B4C09B40056B8A7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		F68D33061B4C09B40056B8A7 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		F68D33091B4C09B40056B8A7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		F68D330F1B4C09B40056B8A7 /* BLEFlashlightTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BLEFlashlightTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		F68D33141B4C09B40056B8A7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F68D33151B4C09B40056B8A7 /* BLEFlashlightTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BLEFlashlightTests.m; sourceTree = "<group>"; };
+		F68D331F1B4C0A150056B8A7 /* CoreBluetooth.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreBluetooth.framework; path = System/Library/Frameworks/CoreBluetooth.framework; sourceTree = SDKROOT; };
+		F68D33211B4C0A870056B8A7 /* LEDService.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LEDService.h; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F68D32F31B4C09B40056B8A7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F68D33201B4C0A150056B8A7 /* CoreBluetooth.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F68D330C1B4C09B40056B8A7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		F68D32ED1B4C09B40056B8A7 = {
+			isa = PBXGroup;
+			children = (
+				F68D331F1B4C0A150056B8A7 /* CoreBluetooth.framework */,
+				F68D32F81B4C09B40056B8A7 /* BLEFlashlight */,
+				F68D33121B4C09B40056B8A7 /* BLEFlashlightTests */,
+				F68D32F71B4C09B40056B8A7 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		F68D32F71B4C09B40056B8A7 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F68D32F61B4C09B40056B8A7 /* BLEFlashlight.app */,
+				F68D330F1B4C09B40056B8A7 /* BLEFlashlightTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F68D32F81B4C09B40056B8A7 /* BLEFlashlight */ = {
+			isa = PBXGroup;
+			children = (
+				F68D32FD1B4C09B40056B8A7 /* AppDelegate.h */,
+				F68D32FE1B4C09B40056B8A7 /* AppDelegate.m */,
+				F68D33001B4C09B40056B8A7 /* ViewController.h */,
+				F68D33011B4C09B40056B8A7 /* ViewController.m */,
+				F68D33031B4C09B40056B8A7 /* Main.storyboard */,
+				F68D33061B4C09B40056B8A7 /* Images.xcassets */,
+				F68D33081B4C09B40056B8A7 /* LaunchScreen.xib */,
+				F68D32F91B4C09B40056B8A7 /* Supporting Files */,
+				F68D33211B4C0A870056B8A7 /* LEDService.h */,
+			);
+			path = BLEFlashlight;
+			sourceTree = "<group>";
+		};
+		F68D32F91B4C09B40056B8A7 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				F68D32FA1B4C09B40056B8A7 /* Info.plist */,
+				F68D32FB1B4C09B40056B8A7 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		F68D33121B4C09B40056B8A7 /* BLEFlashlightTests */ = {
+			isa = PBXGroup;
+			children = (
+				F68D33151B4C09B40056B8A7 /* BLEFlashlightTests.m */,
+				F68D33131B4C09B40056B8A7 /* Supporting Files */,
+			);
+			path = BLEFlashlightTests;
+			sourceTree = "<group>";
+		};
+		F68D33131B4C09B40056B8A7 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				F68D33141B4C09B40056B8A7 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		F68D32F51B4C09B40056B8A7 /* BLEFlashlight */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F68D33191B4C09B40056B8A7 /* Build configuration list for PBXNativeTarget "BLEFlashlight" */;
+			buildPhases = (
+				F68D32F21B4C09B40056B8A7 /* Sources */,
+				F68D32F31B4C09B40056B8A7 /* Frameworks */,
+				F68D32F41B4C09B40056B8A7 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = BLEFlashlight;
+			productName = BLEFlashlight;
+			productReference = F68D32F61B4C09B40056B8A7 /* BLEFlashlight.app */;
+			productType = "com.apple.product-type.application";
+		};
+		F68D330E1B4C09B40056B8A7 /* BLEFlashlightTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F68D331C1B4C09B40056B8A7 /* Build configuration list for PBXNativeTarget "BLEFlashlightTests" */;
+			buildPhases = (
+				F68D330B1B4C09B40056B8A7 /* Sources */,
+				F68D330C1B4C09B40056B8A7 /* Frameworks */,
+				F68D330D1B4C09B40056B8A7 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F68D33111B4C09B40056B8A7 /* PBXTargetDependency */,
+			);
+			name = BLEFlashlightTests;
+			productName = BLEFlashlightTests;
+			productReference = F68D330F1B4C09B40056B8A7 /* BLEFlashlightTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F68D32EE1B4C09B40056B8A7 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0640;
+				ORGANIZATIONNAME = "Don Coleman";
+				TargetAttributes = {
+					F68D32F51B4C09B40056B8A7 = {
+						CreatedOnToolsVersion = 6.4;
+					};
+					F68D330E1B4C09B40056B8A7 = {
+						CreatedOnToolsVersion = 6.4;
+						TestTargetID = F68D32F51B4C09B40056B8A7;
+					};
+				};
+			};
+			buildConfigurationList = F68D32F11B4C09B40056B8A7 /* Build configuration list for PBXProject "BLEFlashlight" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = F68D32ED1B4C09B40056B8A7;
+			productRefGroup = F68D32F71B4C09B40056B8A7 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F68D32F51B4C09B40056B8A7 /* BLEFlashlight */,
+				F68D330E1B4C09B40056B8A7 /* BLEFlashlightTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F68D32F41B4C09B40056B8A7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F68D33051B4C09B40056B8A7 /* Main.storyboard in Resources */,
+				F68D330A1B4C09B40056B8A7 /* LaunchScreen.xib in Resources */,
+				F68D33071B4C09B40056B8A7 /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F68D330D1B4C09B40056B8A7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F68D32F21B4C09B40056B8A7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F68D33021B4C09B40056B8A7 /* ViewController.m in Sources */,
+				F68D32FF1B4C09B40056B8A7 /* AppDelegate.m in Sources */,
+				F68D32FC1B4C09B40056B8A7 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F68D330B1B4C09B40056B8A7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F68D33161B4C09B40056B8A7 /* BLEFlashlightTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		F68D33111B4C09B40056B8A7 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F68D32F51B4C09B40056B8A7 /* BLEFlashlight */;
+			targetProxy = F68D33101B4C09B40056B8A7 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		F68D33031B4C09B40056B8A7 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F68D33041B4C09B40056B8A7 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		F68D33081B4C09B40056B8A7 /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F68D33091B4C09B40056B8A7 /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		F68D33171B4C09B40056B8A7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		F68D33181B4C09B40056B8A7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		F68D331A1B4C09B40056B8A7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = BLEFlashlight/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		F68D331B1B4C09B40056B8A7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = BLEFlashlight/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		F68D331D1B4C09B40056B8A7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = BLEFlashlightTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/BLEFlashlight.app/BLEFlashlight";
+			};
+			name = Debug;
+		};
+		F68D331E1B4C09B40056B8A7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = BLEFlashlightTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/BLEFlashlight.app/BLEFlashlight";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F68D32F11B4C09B40056B8A7 /* Build configuration list for PBXProject "BLEFlashlight" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F68D33171B4C09B40056B8A7 /* Debug */,
+				F68D33181B4C09B40056B8A7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F68D33191B4C09B40056B8A7 /* Build configuration list for PBXNativeTarget "BLEFlashlight" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F68D331A1B4C09B40056B8A7 /* Debug */,
+				F68D331B1B4C09B40056B8A7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		F68D331C1B4C09B40056B8A7 /* Build configuration list for PBXNativeTarget "BLEFlashlightTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F68D331D1B4C09B40056B8A7 /* Debug */,
+				F68D331E1B4C09B40056B8A7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = F68D32EE1B4C09B40056B8A7 /* Project object */;
+}
