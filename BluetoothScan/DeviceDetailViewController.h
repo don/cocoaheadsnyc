@@ -1,5 +1,5 @@
 //
-//  ViewController.h
+//  DeviceDetailViewController.h
 //  BluetoothScan
 //
 //  Created by Mike Bell on 6/2/16.
@@ -8,8 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController
-
+@interface DeviceDetailViewController : UIViewController
 
 @end
-
