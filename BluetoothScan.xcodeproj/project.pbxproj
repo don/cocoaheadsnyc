@@ -14,6 +14,7 @@
 		0963888B1D0080060010E0E2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0963888A1D0080060010E0E2 /* Assets.xcassets */; };
 		0963888E1D0080060010E0E2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0963888C1D0080060010E0E2 /* LaunchScreen.storyboard */; };
 		096388971D0084ED0010E0E2 /* DeviceDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 096388961D0084ED0010E0E2 /* DeviceDetailViewController.m */; };
+		096388991D00BB870010E0E2 /* CoreBluetooth.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 096388981D00BB870010E0E2 /* CoreBluetooth.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,6 +30,7 @@
 		0963888F1D0080060010E0E2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		096388951D0084ED0010E0E2 /* DeviceDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DeviceDetailViewController.h; sourceTree = "<group>"; };
 		096388961D0084ED0010E0E2 /* DeviceDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DeviceDetailViewController.m; sourceTree = "<group>"; };
+		096388981D00BB870010E0E2 /* CoreBluetooth.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreBluetooth.framework; path = System/Library/Frameworks/CoreBluetooth.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -36,6 +38,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				096388991D00BB870010E0E2 /* CoreBluetooth.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -45,6 +48,7 @@
 		096388721D0080050010E0E2 = {
 			isa = PBXGroup;
 			children = (
+				096388981D00BB870010E0E2 /* CoreBluetooth.framework */,
 				0963887D1D0080050010E0E2 /* BluetoothScan */,
 				0963887C1D0080050010E0E2 /* Products */,
 			);

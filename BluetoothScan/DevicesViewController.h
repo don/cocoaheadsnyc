@@ -7,10 +7,14 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <CoreBluetooth/CoreBluetooth.h>
 
-@interface DevicesViewController : UIViewController <UITableViewDelegate, UITableViewDataSource>
+@interface DevicesViewController : UIViewController <CBCentralManagerDelegate, CBPeripheralDelegate,UITableViewDelegate, UITableViewDataSource>
 
 @property (weak, nonatomic) IBOutlet UITableView *tableView;
+
+@property (strong, nonatomic) IBOutlet UISwitch *powerSwitch;
+@property (strong, nonatomic) IBOutlet UISlider *dimmerSlider;
 
 @end
 
