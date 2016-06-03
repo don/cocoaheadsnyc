@@ -9,7 +9,7 @@
 #import <UIKit/UIKit.h>
 #import <CoreBluetooth/CoreBluetooth.h>
 
-@interface DevicesViewController : UIViewController <CBCentralManagerDelegate, CBPeripheralDelegate,UITableViewDelegate, UITableViewDataSource>
+@interface DevicesViewController : UIViewController <CBCentralManagerDelegate, /*CBPeripheralDelegate,*/ UITableViewDelegate, UITableViewDataSource>
 
 @property (weak, nonatomic) IBOutlet UITableView *tableView;
 

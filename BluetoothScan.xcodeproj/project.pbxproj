@@ -15,6 +15,7 @@
 		0963888E1D0080060010E0E2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0963888C1D0080060010E0E2 /* LaunchScreen.storyboard */; };
 		096388971D0084ED0010E0E2 /* DeviceDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 096388961D0084ED0010E0E2 /* DeviceDetailViewController.m */; };
 		096388991D00BB870010E0E2 /* CoreBluetooth.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 096388981D00BB870010E0E2 /* CoreBluetooth.framework */; };
+		0963889C1D01AFD70010E0E2 /* DeviceTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 0963889B1D01AFD70010E0E2 /* DeviceTableViewCell.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,6 +32,8 @@
 		096388951D0084ED0010E0E2 /* DeviceDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DeviceDetailViewController.h; sourceTree = "<group>"; };
 		096388961D0084ED0010E0E2 /* DeviceDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DeviceDetailViewController.m; sourceTree = "<group>"; };
 		096388981D00BB870010E0E2 /* CoreBluetooth.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreBluetooth.framework; path = System/Library/Frameworks/CoreBluetooth.framework; sourceTree = SDKROOT; };
+		0963889A1D01AFD70010E0E2 /* DeviceTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DeviceTableViewCell.h; sourceTree = "<group>"; };
+		0963889B1D01AFD70010E0E2 /* DeviceTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DeviceTableViewCell.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -69,6 +72,8 @@
 				096388821D0080050010E0E2 /* AppDelegate.m */,
 				096388841D0080050010E0E2 /* DevicesViewController.h */,
 				096388851D0080050010E0E2 /* DevicesViewController.m */,
+				0963889A1D01AFD70010E0E2 /* DeviceTableViewCell.h */,
+				0963889B1D01AFD70010E0E2 /* DeviceTableViewCell.m */,
 				096388951D0084ED0010E0E2 /* DeviceDetailViewController.h */,
 				096388961D0084ED0010E0E2 /* DeviceDetailViewController.m */,
 				096388871D0080060010E0E2 /* Main.storyboard */,
@@ -159,6 +164,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				096388861D0080050010E0E2 /* DevicesViewController.m in Sources */,
+				0963889C1D01AFD70010E0E2 /* DeviceTableViewCell.m in Sources */,
 				096388971D0084ED0010E0E2 /* DeviceDetailViewController.m in Sources */,
 				096388831D0080050010E0E2 /* AppDelegate.m in Sources */,
 				096388801D0080050010E0E2 /* main.m in Sources */,

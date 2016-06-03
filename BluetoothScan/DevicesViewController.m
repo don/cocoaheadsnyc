@@ -7,6 +7,8 @@
 //
 
 #import "DevicesViewController.h"
+#import "DeviceTableViewCell.h"
+#import "DeviceDetailViewController.h"
 
 @interface DevicesViewController () {
     
@@ -14,6 +16,7 @@
 }
 @property (strong, nonatomic) CBCentralManager *centralManager;
 @property (strong, nonatomic) CBPeripheral *peripheral;
+@property(nonatomic, strong) UIRefreshControl *refreshControl;
 
 @end
 
@@ -21,109 +24,57 @@
 
 static CBUUID* serviceUUID;
 
-static double INTERVAL = 0.05; // 50 milliseconds
-double lastTime = 0;
-
 - (void)viewDidLoad {
     [super viewDidLoad];
-//    devices = [NSMutableArray arrayWithObjects:@"BT Device1", @"BT Device2", @"BT Device3", nil];
     devices = [NSMutableArray array];
     
     _centralManager = [[CBCentralManager alloc] initWithDelegate:self queue:nil options:nil];
 
     serviceUUID =[CBUUID UUIDWithString:@"FF10"];
+    
+    
+    self.refreshControl = [[UIRefreshControl alloc] init];
+    self.refreshControl.backgroundColor = [UIColor clearColor];
+    self.refreshControl.tintColor = [UIColor lightGrayColor];
+    self.refreshControl.attributedTitle = [[NSAttributedString alloc] initWithString:@"Pull to Refresh"];
+    [self.refreshControl addTarget:self action:@selector(scanForDevices) forControlEvents:UIControlEventValueChanged];
+    [self.tableView addSubview:self.refreshControl];
+
 }
 
-#pragma mark - CBCentralManagerDelegate
-
-- (void)centralManagerDidUpdateState:(CBCentralManager *)central {
-    
-    if ([central state] == CBCentralManagerStatePoweredOn) {
-        // begin scanning
+- (void)scanForDevices {
+    NSLog(@"----- scanForDevices");
+    [devices removeAllObjects];
+    if ([_centralManager state] == CBCentralManagerStatePoweredOn) {
+        NSLog(@"----- Starting Scan");
         [_centralManager scanForPeripheralsWithServices:@[serviceUUID] options:nil];
-        
         // stop the scan
         float scanTimeout = 5;
         [NSTimer scheduledTimerWithTimeInterval:scanTimeout target:self selector:@selector(scanTimer:) userInfo:nil repeats:NO];
     }
 }
 
+#pragma mark - CBCentralManagerDelegate
+
+- (void)centralManagerDidUpdateState:(CBCentralManager *)central {
+    [self scanForDevices];
+}
 
 - (void)centralManager:(CBCentralManager *)central didDiscoverPeripheral:(CBPeripheral *)peripheral advertisementData:(NSDictionary *)advertisementData RSSI:(NSNumber *)RSSI {
     
     NSLog(@"Discovered %@", peripheral.name);
-    [devices addObject:peripheral.name];
-    [[self tableView] reloadData];
-    // we restricted the scan, so this is the device we want to connect to
-//    [central stopScan];
-    
-    // can't connect and scan, normally this works out OK when the user is selecting a device
-    _peripheral = peripheral;
-    float connectTimeout = 0.1;
-    [NSTimer scheduledTimerWithTimeInterval:connectTimeout target:self selector:@selector(connectTimer:) userInfo:nil repeats:NO];
-    
-}
-
-- (void)centralManager:(CBCentralManager *)central didConnectPeripheral:(CBPeripheral *)peripheral {
-    NSLog(@"Connected to %@", peripheral);
-    peripheral.delegate = self;
-    [peripheral discoverServices:@[serviceUUID]];
-}
-
-- (void) centralManager:(CBCentralManager *)central didFailToConnectPeripheral:(CBPeripheral *)peripheral error:(NSError *)error {
-    NSLog(@"Failed to connect to %@", peripheral);
-    UIAlertController *alertController = [UIAlertController
-                                          alertControllerWithTitle:error.localizedDescription
-                                          message:error.localizedRecoverySuggestion
-                                          preferredStyle:UIAlertControllerStyleAlert];
-    
-    UIAlertAction *dismiss = [UIAlertAction actionWithTitle:@"OK"
-                                                      style:UIAlertActionStyleDefault
-                                                    handler:^(UIAlertAction *action) {
-                                                    }];
-    [alertController addAction:dismiss];
-    [self presentViewController:alertController animated:YES completion:nil];
-}
-
-- (void)centralManager:(CBCentralManager *)central didDisconnectPeripheral:(CBPeripheral *)peripheral error:(NSError *)error {
-    NSLog(@"Disconnected from %@", peripheral);
-    UIAlertController *alertController = [UIAlertController
-                                          alertControllerWithTitle:error.localizedDescription
-                                          message:error.localizedRecoverySuggestion
-                                          preferredStyle:UIAlertControllerStyleAlert];
-    
-    UIAlertAction *dismiss = [UIAlertAction actionWithTitle:@"OK"
-                                                      style:UIAlertActionStyleDefault
-                                                    handler:^(UIAlertAction *action) {
-                                                    }];
-    [alertController addAction:dismiss];
-    [self presentViewController:alertController animated:YES completion:nil];
+    if (peripheral.name) {
+        [devices addObject:peripheral];
+        [[self tableView] reloadData];
+    }
 }
 
 #pragma mark - Timers
 
 - (void) scanTimer:(NSTimer *)timer {
+    NSLog(@"----- Stopping Scan");
     [_centralManager stopScan];
-    
-    if (!_peripheral) {
-        UIAlertController *alertController = [UIAlertController
-                                              alertControllerWithTitle:@"No lightblub"
-                                              message:@"Could not find a lightbulb"
-                                              preferredStyle:UIAlertControllerStyleAlert];
-        
-        UIAlertAction *dismiss = [UIAlertAction actionWithTitle:@"OK"
-                                                          style:UIAlertActionStyleDefault
-                                                        handler:^(UIAlertAction *action) {
-                                  }];
-        [alertController addAction:dismiss];
-        [self presentViewController:alertController animated:YES completion:nil];
-    }
-}
-
-- (void) connectTimer:(NSTimer *)timer
-{
-    NSLog(@"Requesting connection to %@", _peripheral);
-    [_centralManager connectPeripheral:_peripheral options:nil];
+    [self.refreshControl endRefreshing];
 }
 
 #pragma mark - tableView methods
@@ -140,12 +91,26 @@ double lastTime = 0;
 
     static NSString *CellIdentifier = @"deviceCell";
     
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier];
+    DeviceTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier];
     if (cell == nil) {
-        cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:CellIdentifier];
+        cell = [[DeviceTableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:CellIdentifier];
     }
-    cell.textLabel.text = [devices objectAtIndex:[indexPath row]];
+    CBPeripheral *peripheral = [devices objectAtIndex:[indexPath row]];
+    cell.lblDeviceName.text = peripheral.name;
+    cell.lblUUID.text = [peripheral.identifier UUIDString];
+//    cell.lblRSSI.text = [NSString stringWithFormat:@"%@",peripheral.RSSI];
     return cell;
+}
+
+-(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
+    _peripheral = [devices objectAtIndex:[indexPath row]];
+    [self performSegueWithIdentifier:@"detailSegue" sender:nil];
+}
+
+-(void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
+    DeviceDetailViewController *detailController = segue.destinationViewController;
+    [detailController setCentralManager:_centralManager];
+    [detailController setPeripheral:_peripheral];
 }
 
 @end
