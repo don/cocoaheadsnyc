@@ -13,7 +13,7 @@ iOS
 See https://github.com/don/ibeacon-demo for iBeacon Ranging Demo Code
 
 Arduino
- * https://github.com/don/ITP-BluetoothLE/blob/master/arduino/LED_v2/LED_v2.ino
- * https://github.com/don/ITP-BluetoothLE/blob/master/arduino/Thermometer/Thermometer.ino
+ * LED - Arduino 101 sketch that implements the RoboSmart lightbulb serice
+ * RedBearLab Blend - https://codebender.cc/sketch:312533
  
-This repo was copied from https://github.com/don/phillycocoa
+This repo was started from https://github.com/don/phillycocoa
