@@ -16,6 +16,7 @@
 		096388971D0084ED0010E0E2 /* DeviceDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 096388961D0084ED0010E0E2 /* DeviceDetailViewController.m */; };
 		096388991D00BB870010E0E2 /* CoreBluetooth.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 096388981D00BB870010E0E2 /* CoreBluetooth.framework */; };
 		0963889C1D01AFD70010E0E2 /* DeviceTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 0963889B1D01AFD70010E0E2 /* DeviceTableViewCell.m */; };
+		F6AF07421D07724700A06A2F /* CBPeripheral+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = F6AF07411D07724700A06A2F /* CBPeripheral+Extension.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +35,8 @@
 		096388981D00BB870010E0E2 /* CoreBluetooth.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreBluetooth.framework; path = System/Library/Frameworks/CoreBluetooth.framework; sourceTree = SDKROOT; };
 		0963889A1D01AFD70010E0E2 /* DeviceTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DeviceTableViewCell.h; sourceTree = "<group>"; };
 		0963889B1D01AFD70010E0E2 /* DeviceTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DeviceTableViewCell.m; sourceTree = "<group>"; };
+		F6AF07401D07722A00A06A2F /* CBPeripheral+Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "CBPeripheral+Extension.h"; sourceTree = "<group>"; };
+		F6AF07411D07724700A06A2F /* CBPeripheral+Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "CBPeripheral+Extension.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,6 +84,8 @@
 				0963888C1D0080060010E0E2 /* LaunchScreen.storyboard */,
 				0963888F1D0080060010E0E2 /* Info.plist */,
 				0963887E1D0080050010E0E2 /* Supporting Files */,
+				F6AF07401D07722A00A06A2F /* CBPeripheral+Extension.h */,
+				F6AF07411D07724700A06A2F /* CBPeripheral+Extension.m */,
 			);
 			path = BluetoothScan;
 			sourceTree = "<group>";
@@ -165,6 +170,7 @@
 			files = (
 				096388861D0080050010E0E2 /* DevicesViewController.m in Sources */,
 				0963889C1D01AFD70010E0E2 /* DeviceTableViewCell.m in Sources */,
+				F6AF07421D07724700A06A2F /* CBPeripheral+Extension.m in Sources */,
 				096388971D0084ED0010E0E2 /* DeviceDetailViewController.m in Sources */,
 				096388831D0080050010E0E2 /* AppDelegate.m in Sources */,
 				096388801D0080050010E0E2 /* main.m in Sources */,
@@ -316,6 +322,7 @@
 				096388941D0080060010E0E2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

@@ -9,6 +9,7 @@
 #import "DevicesViewController.h"
 #import "DeviceTableViewCell.h"
 #import "DeviceDetailViewController.h"
+#import "CBPeripheral+Extension.h"
 
 @interface DevicesViewController () {
     
@@ -49,7 +50,7 @@ static CBUUID* serviceUUID;
         NSLog(@"----- Starting Scan");
         [_centralManager scanForPeripheralsWithServices:@[serviceUUID] options:nil];
         // stop the scan
-        float scanTimeout = 5;
+        float scanTimeout = 3;
         [NSTimer scheduledTimerWithTimeInterval:scanTimeout target:self selector:@selector(scanTimer:) userInfo:nil repeats:NO];
     }
 }
@@ -62,8 +63,11 @@ static CBUUID* serviceUUID;
 
 - (void)centralManager:(CBCentralManager *)central didDiscoverPeripheral:(CBPeripheral *)peripheral advertisementData:(NSDictionary *)advertisementData RSSI:(NSNumber *)RSSI {
     
-    NSLog(@"Discovered %@", peripheral.name);
+    NSLog(@"Discovered %@ %@", peripheral.name, RSSI);
+    
+    // TODO handle unnamed devices
     if (peripheral.name) {
+        [peripheral setAdvertisementRSSI:RSSI];
         [devices addObject:peripheral];
         [[self tableView] reloadData];
     }
@@ -75,6 +79,7 @@ static CBUUID* serviceUUID;
     NSLog(@"----- Stopping Scan");
     [_centralManager stopScan];
     [self.refreshControl endRefreshing];
+    [self.tableView reloadData];
 }
 
 #pragma mark - tableView methods
@@ -98,7 +103,7 @@ static CBUUID* serviceUUID;
     CBPeripheral *peripheral = [devices objectAtIndex:[indexPath row]];
     cell.lblDeviceName.text = peripheral.name;
     cell.lblUUID.text = [peripheral.identifier UUIDString];
-//    cell.lblRSSI.text = [NSString stringWithFormat:@"%@",peripheral.RSSI];
+    cell.lblRSSI.text = [NSString stringWithFormat:@"%@", peripheral.advertisementRSSI];
     return cell;
 }
 

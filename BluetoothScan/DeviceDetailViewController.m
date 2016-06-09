@@ -34,10 +34,11 @@ double lastTime = 0;
     
     [_powerSwitch addTarget:self action:@selector(onPowerSwitchChanged:) forControlEvents:UIControlEventValueChanged];
     [_powerSwitch setEnabled:NO];
-
-
+    
     [_centralManager setDelegate:self];
     [_centralManager connectPeripheral:_peripheral options:nil];
+    
+    [self setTitle:self.peripheral.name];
 }
 
 -(void)viewWillDisappear:(BOOL)animated {
