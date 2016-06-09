@@ -13,7 +13,6 @@
 		F68D33051B4C09B40056B8A7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F68D33031B4C09B40056B8A7 /* Main.storyboard */; };
 		F68D33071B4C09B40056B8A7 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F68D33061B4C09B40056B8A7 /* Images.xcassets */; };
 		F68D330A1B4C09B40056B8A7 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = F68D33081B4C09B40056B8A7 /* LaunchScreen.xib */; };
-		F68D33161B4C09B40056B8A7 /* BLEFlashlightTests.m in Sources */ = {isa = PBXBuildFile; fileRef = F68D33151B4C09B40056B8A7 /* BLEFlashlightTests.m */; };
 		F68D33201B4C0A150056B8A7 /* CoreBluetooth.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F68D331F1B4C0A150056B8A7 /* CoreBluetooth.framework */; };
 /* End PBXBuildFile section */
 
@@ -39,8 +38,6 @@
 		F68D33061B4C09B40056B8A7 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		F68D33091B4C09B40056B8A7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		F68D330F1B4C09B40056B8A7 /* BLEFlashlightTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BLEFlashlightTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		F68D33141B4C09B40056B8A7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		F68D33151B4C09B40056B8A7 /* BLEFlashlightTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BLEFlashlightTests.m; sourceTree = "<group>"; };
 		F68D331F1B4C0A150056B8A7 /* CoreBluetooth.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreBluetooth.framework; path = System/Library/Frameworks/CoreBluetooth.framework; sourceTree = SDKROOT; };
 		F68D33211B4C0A870056B8A7 /* LEDService.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LEDService.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -69,7 +66,6 @@
 			children = (
 				F68D331F1B4C0A150056B8A7 /* CoreBluetooth.framework */,
 				F68D32F81B4C09B40056B8A7 /* BLEFlashlight */,
-				F68D33121B4C09B40056B8A7 /* BLEFlashlightTests */,
 				F68D32F71B4C09B40056B8A7 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -104,23 +100,6 @@
 			children = (
 				F68D32FA1B4C09B40056B8A7 /* Info.plist */,
 				F68D32FB1B4C09B40056B8A7 /* main.m */,
-			);
-			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
-		F68D33121B4C09B40056B8A7 /* BLEFlashlightTests */ = {
-			isa = PBXGroup;
-			children = (
-				F68D33151B4C09B40056B8A7 /* BLEFlashlightTests.m */,
-				F68D33131B4C09B40056B8A7 /* Supporting Files */,
-			);
-			path = BLEFlashlightTests;
-			sourceTree = "<group>";
-		};
-		F68D33131B4C09B40056B8A7 /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				F68D33141B4C09B40056B8A7 /* Info.plist */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -235,7 +214,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F68D33161B4C09B40056B8A7 /* BLEFlashlightTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -426,6 +404,7 @@
 				F68D331B1B4C09B40056B8A7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		F68D331C1B4C09B40056B8A7 /* Build configuration list for PBXNativeTarget "BLEFlashlightTests" */ = {
 			isa = XCConfigurationList;
@@ -434,6 +413,7 @@
 				F68D331E1B4C09B40056B8A7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
