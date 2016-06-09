@@ -57,7 +57,7 @@ void switchCharacteristicWritten(BLECentral& central, BLECharacteristic& charact
     analogWrite(LED_PIN, brightness);
   } else {
     Serial.println(F("LED off"));
-    analogWrite(LED_PIN, 0x0);
+    analogWrite(LED_PIN, 0);
   }
 }
 
@@ -65,5 +65,8 @@ void dimmerCharacteristicWritten(BLECentral& central, BLECharacteristic& charact
   Serial.print(F("Dimmer set to: "));
   Serial.println(dimmerCharacteristic.value());
 
+  if (switchCharacteristic.value() == 0) {
+    switchCharacteristic.setValue(1);
+  }
   analogWrite(LED_PIN, dimmerCharacteristic.value());
 }
