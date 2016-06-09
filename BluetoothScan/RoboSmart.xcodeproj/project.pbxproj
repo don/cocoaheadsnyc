@@ -20,7 +20,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		0963887B1D0080050010E0E2 /* BluetoothScan.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BluetoothScan.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		0963887B1D0080050010E0E2 /* RoboSmart.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RoboSmart.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0963887F1D0080050010E0E2 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		096388811D0080050010E0E2 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		096388821D0080050010E0E2 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -55,7 +55,7 @@
 			isa = PBXGroup;
 			children = (
 				096388981D00BB870010E0E2 /* CoreBluetooth.framework */,
-				0963887D1D0080050010E0E2 /* BluetoothScan */,
+				0963887D1D0080050010E0E2 /* RoboSmart */,
 				0963887C1D0080050010E0E2 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -63,12 +63,12 @@
 		0963887C1D0080050010E0E2 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				0963887B1D0080050010E0E2 /* BluetoothScan.app */,
+				0963887B1D0080050010E0E2 /* RoboSmart.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		0963887D1D0080050010E0E2 /* BluetoothScan */ = {
+		0963887D1D0080050010E0E2 /* RoboSmart */ = {
 			isa = PBXGroup;
 			children = (
 				096388811D0080050010E0E2 /* AppDelegate.h */,
@@ -87,7 +87,7 @@
 				F6AF07401D07722A00A06A2F /* CBPeripheral+Extension.h */,
 				F6AF07411D07724700A06A2F /* CBPeripheral+Extension.m */,
 			);
-			path = BluetoothScan;
+			path = RoboSmart;
 			sourceTree = "<group>";
 		};
 		0963887E1D0080050010E0E2 /* Supporting Files */ = {
@@ -101,9 +101,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		0963887A1D0080050010E0E2 /* BluetoothScan */ = {
+		0963887A1D0080050010E0E2 /* RoboSmart */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 096388921D0080060010E0E2 /* Build configuration list for PBXNativeTarget "BluetoothScan" */;
+			buildConfigurationList = 096388921D0080060010E0E2 /* Build configuration list for PBXNativeTarget "RoboSmart" */;
 			buildPhases = (
 				096388771D0080050010E0E2 /* Sources */,
 				096388781D0080050010E0E2 /* Frameworks */,
@@ -113,9 +113,9 @@
 			);
 			dependencies = (
 			);
-			name = BluetoothScan;
+			name = RoboSmart;
 			productName = BluetoothScan;
-			productReference = 0963887B1D0080050010E0E2 /* BluetoothScan.app */;
+			productReference = 0963887B1D0080050010E0E2 /* RoboSmart.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -132,7 +132,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 096388761D0080050010E0E2 /* Build configuration list for PBXProject "BluetoothScan" */;
+			buildConfigurationList = 096388761D0080050010E0E2 /* Build configuration list for PBXProject "RoboSmart" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -145,7 +145,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				0963887A1D0080050010E0E2 /* BluetoothScan */,
+				0963887A1D0080050010E0E2 /* RoboSmart */,
 			);
 		};
 /* End PBXProject section */
@@ -285,10 +285,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				INFOPLIST_FILE = BluetoothScan/Info.plist;
+				INFOPLIST_FILE = RoboSmart/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.chariotsolutions.BluetoothScan;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_BUNDLE_IDENTIFIER = com.chariotsolutions.RoboSmart;
+				PRODUCT_NAME = RoboSmart;
 			};
 			name = Debug;
 		};
@@ -296,17 +296,17 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				INFOPLIST_FILE = BluetoothScan/Info.plist;
+				INFOPLIST_FILE = RoboSmart/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.chariotsolutions.BluetoothScan;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_BUNDLE_IDENTIFIER = com.chariotsolutions.RoboSmart;
+				PRODUCT_NAME = RoboSmart;
 			};
 			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		096388761D0080050010E0E2 /* Build configuration list for PBXProject "BluetoothScan" */ = {
+		096388761D0080050010E0E2 /* Build configuration list for PBXProject "RoboSmart" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				096388901D0080060010E0E2 /* Debug */,
@@ -315,7 +315,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		096388921D0080060010E0E2 /* Build configuration list for PBXNativeTarget "BluetoothScan" */ = {
+		096388921D0080060010E0E2 /* Build configuration list for PBXNativeTarget "RoboSmart" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				096388931D0080060010E0E2 /* Debug */,
