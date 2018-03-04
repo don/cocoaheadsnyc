@@ -93,7 +93,9 @@ double lastTime = 0;
     
     // ask for the values, will get the results in didUpdateValueForCharacteristic
     [peripheral readValueForCharacteristic:_switchCharacteristic];
-    [peripheral readValueForCharacteristic:_dimmerCharacteristic];
+    if (_dimmerCharacteristic) {
+        [peripheral readValueForCharacteristic:_dimmerCharacteristic];
+    }
     
     // enable the UI
     [_powerSwitch setEnabled:YES];
@@ -149,6 +151,10 @@ double lastTime = 0;
 }
 
 - (void) onDimmerChanged:(id)sender {
+    if (!_dimmerCharacteristic) {
+        NSLog(@"This device does not have a dimmer");
+        return;
+    }
     
     // throttle so we don't send too much data too fast
     double currentTime = [NSDate timeIntervalSinceReferenceDate];
